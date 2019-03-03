@@ -1,0 +1,21 @@
+/**
+ * Nav Menuand Header
+ *
+ * @package utpt
+ */
+
+.menu {
+	list-style: none;
+    padding: 0;
+    margin: 0.5em 0;
+}
+
+.menu-item a {
+    color: #aaaaaa;
+    padding: 0.3em 0;
+    display: inline-block;
+}
+
+.current-menu-item a {
+    color: darken( $color-1, 10% );
+}

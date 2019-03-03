@@ -1,0 +1,16 @@
+/**
+	* SHAME
+	* Everything here should be refactored or moved.
+	*/
+// move the admin bar to the bottom
+#wpadminbar {
+	top: inherit;
+	bottom: 0;
+	position: fixed;
+}
+
+#wpadminbar .ab-top-menu>.menupop>.ab-sub-wrapper {
+	width: 100%;
+	left: 0;
+	bottom: 100%;
+}

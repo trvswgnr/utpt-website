@@ -1,0 +1,35 @@
+{
+  "name": "utpt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "webpack-dev-server --progress --colors --hot",
+    "dev": "PD=$(dirname $(dirname $(dirname $(pwd)))) ; WP_DIR=${PD##*/} webpack --mode development --watch",
+    "start": "npm run dev && npm run server",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "*",
+    "browser-sync": "^2.24.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^0.28.11",
+    "eslint": "^5.14.1",
+    "eslint-config-wordpress": "^2.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "mini-css-extract-plugin": "^0.4.3",
+    "node-sass": "^4.8.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.1.9",
+    "webpack-cli": "^3.0.0",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {}
+}

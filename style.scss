@@ -1,0 +1,19 @@
+/*
+Theme Name: Unicorns Take Photos Too
+Theme URI: https://travisaw.com
+Author: Travis Wagner
+Author URI: https://travisaw.com/
+Description: Custom theme with ACF, Custom Post Types and more
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: utpt
+*/
+
+@import 'src/scss/variables';
+@import 'src/scss/normalize';
+@import 'src/scss/base';
+@import 'src/scss/nav';
+@import 'src/scss/gallery';
+@import 'src/scss/templates/home';
+@import 'src/scss/shame';
