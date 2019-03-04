@@ -9,6 +9,8 @@
 
 .gallery__item {
 	display: block;
+	position: relative;
+	overflow: hidden;
 	height: 0;
 	width: 25%;
 	padding-bottom: 25%;
@@ -42,9 +44,7 @@
 }
 
 .gallery__view-more {
-	display: block;
 	background: white;
-	position: relative;
 	
 	@media (max-width: $tablet) {
 		display: none;
@@ -62,5 +62,18 @@
 		transform: 
 			translateX(-50%)
 			translateY(-50%);
+	}
+}
+
+.gallery__title {
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+	bottom: -100%;
+	transition: 0.2s;
+	
+	.gallery__item:hover & {
+		bottom: 0;
 	}
 }

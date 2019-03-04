@@ -59,6 +59,6 @@ function create_project_cpt() {
 		'publicly_queryable'  => true,
 		'capability_type'     => 'post',
 	);
-	register_post_type( 'projects', $args );
+	register_post_type( 'portfolio', $args );
 }
 add_action( 'init', 'create_project_cpt', 0 );

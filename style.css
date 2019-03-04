@@ -374,7 +374,7 @@ header, main {
   flex: 1; }
 
 main {
-  padding: 4em 1em 0; }
+  padding: 4em 3em 0 0.5em; }
   @media (max-width: 768px) {
     main {
       padding-top: 0; } }
@@ -456,6 +456,8 @@ footer {
 
 .gallery__item {
   display: block;
+  position: relative;
+  overflow: hidden;
   height: 0;
   width: 25%;
   padding-bottom: 25%;
@@ -481,9 +483,7 @@ footer {
       padding-bottom: 50%; } }
 
 .gallery__view-more {
-  display: block;
-  background: white;
-  position: relative; }
+  background: white; }
   @media (max-width: 768px) {
     .gallery__view-more {
       display: none; } }
@@ -497,6 +497,16 @@ footer {
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%); }
+
+.gallery__title {
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  bottom: -100%;
+  transition: 0.2s; }
+  .gallery__item:hover .gallery__title {
+    bottom: 0; }
 
 /**
 	* SHAME
