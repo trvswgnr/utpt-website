@@ -17,15 +17,16 @@
 </head>
 <body <?php body_class(); ?>>
 	<div id="page">
-		<header>
-			<div class="logo">
-				<img src="<?php image( 'logo.png' ); ?>" alt="Unicorns Take Photos Too Logo">
-			</div>
-			<?php
-			$args = array(
-				'theme_location' => 'primary',
-				'container'      => 'nav',
-			);
-			wp_nav_menu( $args );
-			?>
-		</header>
+		<div id="wrapper">
+			<header>
+				<div class="logo">
+					<img src="<?php image( 'logo.png' ); ?>" alt="Unicorns Take Photos Too Logo">
+				</div>
+				<?php
+				$args = array(
+					'theme_location' => 'primary',
+					'container'      => 'nav',
+				);
+				wp_nav_menu( $args );
+				?>
+			</header>
