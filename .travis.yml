@@ -1,8 +1,8 @@
 language: node_js
 env:
   global:
-  - DEVELOPMENT_PATH="/home/travisaw/travisaw.com/utpt/wp-content/themes/unicorns-take-photos-too"
-  - PRODUCTION_PATH="/home/travisaw/travisaw.com/utpt/wp-content/themes/unicorns-take-photos-too"
+  - DEVELOPMENT_PATH="/home/travisaw/travisaw.com/utpt/wp-content/themes/testdev"
+  - PRODUCTION_PATH="/home/travisaw/travisaw.com/utpt/wp-content/themes/testpro"
   - SSH_USER="travisaw"
   - SSH_HOST="travisawagner.com"
   - DEPLOY_IGNORE="./scripts/.deployignore"
