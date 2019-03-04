@@ -1,0 +1,7 @@
+/.*
+/node_modules/
+/src/
+/config.js
+/package.json
+/package-lock.json
+/deploy_rsa.enc
