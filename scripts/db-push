@@ -73,10 +73,10 @@ else
 	# export db file from local
 	echo "Exporting local database to server at ${PWD}/$SQL_FILENAME..."
 	mysqldump --user=$LOCAL_DB_USER --password="$LOCAL_DB_PASSWORD" $LOCAL_DB > $SQL_FILENAME
-	errorcheck
+	errorcheck "success" "error exporting remote"
 fi
 
-# download the mysql file from the WP Engine server
+# place the mysql file on the server
 echo "Placing SQL file from ./$SQL_FILENAME to $SERVER_SQL_FILE..."
 scp -P $SSH_PORT ./$SQL_FILENAME $SSH_USER@$SSH_HOST:$SERVER_SQL_FILE
 errorcheck
@@ -89,7 +89,7 @@ fi
 
 # drop db and create empty one with same name
 echo "Deleting existing remote DB and replacing..."
-ssh $SSH_USER@$SSH_HOST -p $SSH_PORT "mysql --user=$REMOTE_DB_USER --password=$REMOTE_DB_PASSWORD --execute='DROP DATABASE IF EXISTS $REMOTE_DB; CREATE DATABASE $REMOTE_DB;'"
+ssh $SSH_USER@$SSH_HOST -p $SSH_PORT "mysql --user=$REMOTE_DB_USER --password='$REMOTE_DB_PASSWORD' --execute='DROP DATABASE IF EXISTS $REMOTE_DB; CREATE DATABASE $REMOTE_DB;'"
 errorcheck
 
 # replace the remote db with the download
