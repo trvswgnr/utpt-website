@@ -10,16 +10,16 @@
  */
 function create_project_cpt() {
 	$labels = array(
-		'name'                  => __( 'Projects', 'Post Type General Name' ),
+		'name'                  => __( 'Portfolio', 'Post Type General Name' ),
 		'singular_name'         => __( 'Project', 'Post Type Singular Name' ),
-		'menu_name'             => __( 'Projects', 'utpt' ),
+		'menu_name'             => __( 'Portfolio', 'utpt' ),
 		'name_admin_bar'        => __( 'Project', 'utpt' ),
 		'archives'              => __( 'Project Archives', 'utpt' ),
 		'attributes'            => __( 'Project Attributes', 'utpt' ),
 		'parent_item_colon'     => __( 'Parent Project:', 'utpt' ),
 		'all_items'             => __( 'All Projects', 'utpt' ),
 		'add_new_item'          => __( 'Add New Project', 'utpt' ),
-		'add_new'               => __( 'Add New', 'utpt' ),
+		'add_new'               => __( 'Add Project', 'utpt' ),
 		'new_item'              => __( 'New Project', 'utpt' ),
 		'edit_item'             => __( 'Edit Project', 'utpt' ),
 		'update_item'           => __( 'Update Project', 'utpt' ),
@@ -62,4 +62,3 @@ function create_project_cpt() {
 	register_post_type( 'projects', $args );
 }
 add_action( 'init', 'create_project_cpt', 0 );
-
