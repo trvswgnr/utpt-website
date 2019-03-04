@@ -10,6 +10,6 @@ before_install:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/ travisaw@travisawagner.com:/home/travisaw/travisaw.com/utpt/wp-content/theme/unicorns-take-photos-too
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/ travisaw@travisawagner.com:/home/travisaw/travisaw.com/utpt/wp-content/themes/unicorns-take-photos-too
   on:
     branch: master
