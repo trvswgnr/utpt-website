@@ -315,6 +315,9 @@ template {
 [hidden] {
   display: none; }
 
+/**
+ * Base Styles
+ */
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -335,17 +338,28 @@ html {
 
 body {
   color: #444444;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 400;
   line-height: 1.5;
   overflow-x: hidden;
-  font-family: 'Lato', Arial, Helvetica, sans-serif; }
+  font-family: "Lato", Arial, Helvetica, sans-serif; }
 
 #page {
-  display: flex;
   position: absolute;
   overflow-x: hidden;
-  width: 100%; }
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+a, a:link {
+  color: #14b5a0;
+  text-decoration: none; }
+  a:visited, a:link:visited {
+    color: #8c71b1; }
+  a:hover, a:link:hover {
+    color: #de5da1; }
 
 img {
   max-width: 100%; }
@@ -360,26 +374,55 @@ header, main {
   flex: 1; }
 
 main {
-  padding: 4em 1em; }
+  padding: 4em 1em 0; }
+  @media (max-width: 768px) {
+    main {
+      padding-top: 0; } }
+
+.home main {
+  padding-right: 0; }
+  @media (max-width: 768px) {
+    .home main {
+      padding-left: 0; } }
 
 header {
   box-sizing: content-box;
   max-width: 210px;
   width: 25%;
-  padding: 1em 1em 1em 3em; }
-
-a {
-  text-decoration: none; }
+  padding: 1em 1em 0 3em; }
+  @media (max-width: 768px) {
+    header {
+      width: 100%;
+      padding: 1em;
+      max-width: 250px;
+      margin: 0 auto;
+      text-align: center; } }
 
 h1 {
-  margin-top: 0; }
+  margin-top: -13px; }
 
 .logo {
   position: relative;
-  left: -12px; }
+  left: -15px; }
 
 article {
   max-width: 768px; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 3em; }
+  @media (max-width: 768px) {
+    footer {
+      display: block;
+      padding-top: 2.5em; } }
+
+#wrapper {
+  display: flex; }
+  @media (max-width: 768px) {
+    #wrapper {
+      display: block; } }
 
 /**
  * Nav Menuand Header
@@ -394,10 +437,15 @@ article {
 .menu-item a {
   color: #aaaaaa;
   padding: 0.3em 0;
-  display: inline-block; }
+  display: inline-block;
+  width: 100%; }
+  .menu-item a:hover {
+    color: #848484; }
 
 .current-menu-item a {
   color: #8c71b1; }
+  .current-menu-item a:hover {
+    color: #73559a; }
 
 /**
  * Gallery
@@ -408,18 +456,47 @@ article {
 
 .gallery__item {
   display: block;
+  height: 0;
   width: 25%;
   padding-bottom: 25%;
-  background-color: #a792c3;
+  background-color: #14b5a0;
   background-size: cover;
   cursor: pointer;
-  opacity: 0.7;
   transition: 0.3s;
   background-position: center top; }
+  @media (min-width: 768px) {
+    .gallery__item {
+      opacity: 0.7; } }
   .gallery__item:hover {
     opacity: 1; }
   .gallery__item:nth-child(even) {
-    background-color: #14b5a0; }
+    background-color: #8c71b1; }
+  @media (max-width: 1050px) {
+    .gallery__item {
+      width: 33.3333%;
+      padding-bottom: 33.3333%; } }
+  @media (max-width: 768px) {
+    .gallery__item {
+      width: 50%;
+      padding-bottom: 50%; } }
+
+.gallery__view-more {
+  display: block;
+  background: white;
+  position: relative; }
+  @media (max-width: 768px) {
+    .gallery__view-more {
+      display: none; } }
+  @media (min-width: 1050px) {
+    .gallery__view-more {
+      display: none; } }
+  .gallery__view-more span {
+    position: absolute;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%); }
 
 /**
 	* SHAME
@@ -434,4 +511,35 @@ article {
   width: 100%;
   left: 0;
   bottom: 100%; }
+
+.social {
+  display: flex;
+  font-size: 0.8em;
+  font-weight: bold; }
+  @media (max-width: 768px) {
+    .social {
+      justify-content: center; } }
+
+.social__item {
+  color: white !important;
+  background: #b3b3b3;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em; }
+
+.social__icon {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  margin-right: 0.5em; }
+
+.credit {
+  font-size: 0.7em;
+  color: #999999; }
+  @media (max-width: 768px) {
+    .credit {
+      text-align: center;
+      margin-top: 2em; } }
 

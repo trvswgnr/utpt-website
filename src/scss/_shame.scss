@@ -14,3 +14,42 @@
 	left: 0;
 	bottom: 100%;
 }
+
+
+.social {
+	display: flex;
+	font-size: 0.8em;
+	font-weight: bold;
+
+	@media (max-width: $tablet) {
+		justify-content: center;
+	}
+}
+
+.social__item {
+	color: white !important;
+    background: #b3b3b3;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.social__icon {
+	display: flex;
+    width: 35px;
+	height: 35px;
+	margin-right: 0.5em;
+}
+
+
+.credit {
+	font-size: 0.7em;
+	color: #999999;
+
+	@media (max-width: $tablet) {
+		text-align: center;
+		margin-top: 2em;
+	}
+}
