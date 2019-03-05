@@ -473,7 +473,7 @@ footer {
     opacity: 1; }
   .gallery__item:nth-child(even) {
     background-color: #8c71b1; }
-  @media (max-width: 1050px) {
+  @media (max-width: 1300px) {
     .gallery__item {
       width: 33.3333%;
       padding-bottom: 33.3333%; } }
@@ -491,7 +491,7 @@ footer {
   @media (max-width: 768px) {
     .gallery__view-more {
       display: none; } }
-  @media (min-width: 1050px) {
+  @media (min-width: 1300px) {
     .gallery__view-more {
       display: none; } }
   .gallery__view-more span {

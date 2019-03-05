@@ -32,7 +32,7 @@
 		background-color: $color-2;
 	}
 
-	@media (max-width: $desktop) {
+	@media (max-width: $wide) {
 		width: 33.3333%;
 		padding-bottom: 33.3333%;
 	}
@@ -55,7 +55,7 @@
 		display: none;
 	}
 
-	@media (min-width: $desktop) {
+	@media (min-width: $wide) {
 		display: none;
 	}
 
