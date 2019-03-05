@@ -8,7 +8,7 @@ module.exports = {
 		main: './index.js'
 	},
 	output: {
-		path: path.resolve( __dirname, '' ),
+		path: path.resolve( __dirname, 'assets/js' ),
 		filename: '[name].js'
 	},
 	module: {
@@ -28,7 +28,7 @@ module.exports = {
 	},
 	plugins: [
     new MiniCssExtractPlugin({
-			filename: 'style.css'
+			filename: '../../style.css' // up two directories from /assets/js/ to base folder
 		}),
 		new BrowserSyncPlugin({
 				host: 'localhost',
