@@ -523,17 +523,17 @@ footer {
     margin-right: -1rem; } }
 
 /**
-	* SHAME
-	* Everything here should be refactored or moved.
-	*/
+ * SHAME
+ * Everything here should be refactored or moved.
+ */
 #wpadminbar {
   top: inherit;
   bottom: 0;
   position: fixed; }
 
 #wpadminbar .ab-top-menu > .menupop > .ab-sub-wrapper {
-  width: 100%;
-  left: 0;
+  width: initial;
+  left: initial;
   bottom: 100%; }
 
 .social {

@@ -1,33 +1,33 @@
 /**
-	* SHAME
-	* Everything here should be refactored or moved.
-	*/
+ * SHAME
+ * Everything here should be refactored or moved.
+ */
+ 
 // move the admin bar to the bottom
 #wpadminbar {
-	top: inherit;
-	bottom: 0;
-	position: fixed;
+    top: inherit;
+    bottom: 0;
+    position: fixed;
 }
 
-#wpadminbar .ab-top-menu>.menupop>.ab-sub-wrapper {
-	width: 100%;
-	left: 0;
-	bottom: 100%;
+#wpadminbar .ab-top-menu > .menupop > .ab-sub-wrapper {
+    width: initial;
+    left: initial;
+    bottom: 100%;
 }
-
 
 .social {
-	display: flex;
-	font-size: 0.8em;
-	font-weight: bold;
+    display: flex;
+    font-size: 0.8em;
+    font-weight: bold;
 
-	@media (max-width: $tablet) {
-		justify-content: center;
-	}
+    @media (max-width: $tablet) {
+        justify-content: center;
+    }
 }
 
 .social__item {
-	color: white !important;
+    color: white !important;
     background: #b3b3b3;
     border-radius: 25px;
     display: flex;
@@ -37,19 +37,18 @@
 }
 
 .social__icon {
-	display: flex;
+    display: flex;
     width: 35px;
-	height: 35px;
-	margin-right: 0.5em;
+    height: 35px;
+    margin-right: 0.5em;
 }
 
-
 .credit {
-	font-size: 0.7em;
-	color: #999999;
+    font-size: 0.7em;
+    color: #999999;
 
-	@media (max-width: $tablet) {
-		text-align: center;
-		margin-top: 2em;
-	}
+    @media (max-width: $tablet) {
+        text-align: center;
+        margin-top: 2em;
+    }
 }
