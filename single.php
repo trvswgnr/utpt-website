@@ -9,8 +9,6 @@
 
 <?php get_header(); ?>
 
-<?php get_template_part( 'template-parts/section', 'page-hero' ); ?>
-
 <main>
 	<article>
 	<?php
