@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "server": "webpack-dev-server --progress --colors --hot",
-    "dev": "PD=$(dirname $(dirname $(dirname $(pwd)))) ; WP_DIR=${PD##*/} webpack --mode development --watch",
-    "start": "npm run dev && npm run server",
-    "test": "webpack --mode production",
-    "build": "webpack --mode production"
+    "dev": "webpack --mode development --watch",
+    "start": "npm run dev",
+    "build": "webpack --mode production",
+    "test": "npm run build"
   },
   "author": "",
   "license": "ISC",
