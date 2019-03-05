@@ -509,7 +509,8 @@ footer {
   text-align: center;
   bottom: -100%;
   transition: 0.2s;
-  padding: 0.25em; }
+  padding: 0.5em 0.25em;
+  color: #8c71b1; }
   @media (max-width: 768px) {
     .gallery__title {
       bottom: 0; } }

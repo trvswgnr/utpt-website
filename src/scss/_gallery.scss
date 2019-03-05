@@ -77,7 +77,8 @@
     text-align: center;
 	bottom: -100%;
 	transition: 0.2s;
-	padding: 0.25em;
+	padding: 0.5em 0.25em;
+	color: $color-2;
 	
 	@media (max-width: $tablet) {
 		bottom: 0;
