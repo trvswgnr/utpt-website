@@ -24,7 +24,7 @@
 			while ( $portfolio->have_posts() ) :
 				$portfolio->the_post();
 				?>
-				<a href="<?php the_permalink(); ?>" class="gallery__item" style="background-image: url(<?php the_post_thumbnail_url( 'medium' ); ?>);"><span class="gallery__title"><?php the_title(); ?></span></a>
+				<a href="<?php the_permalink(); ?>" class="gallery__item" style="background-image: url(<?php the_post_thumbnail_url( 'large' ); ?>);"><span class="gallery__title"><?php the_title(); ?></span></a>
 				<?php
 			endwhile;
 			?>
