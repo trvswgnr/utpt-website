@@ -406,7 +406,8 @@ h1 {
   left: -15px; }
 
 article {
-  max-width: 768px; }
+  max-width: 768px;
+  margin-bottom: 2em; }
 
 footer {
   display: flex;
