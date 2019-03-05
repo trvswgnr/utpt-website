@@ -41,6 +41,11 @@
 		width: 50%;
 		padding-bottom: 50%;
 	}
+
+	@media (max-width: $mobile) {
+		width: 100%;
+		padding-bottom: 100%;
+	}
 }
 
 .gallery__view-more {
@@ -68,12 +73,26 @@
 .gallery__title {
     position: absolute;
     width: 100%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
     text-align: center;
 	bottom: -100%;
 	transition: 0.2s;
+	padding: 0.25em;
 	
+	@media (max-width: $tablet) {
+		bottom: 0;
+	}
+
 	.gallery__item:hover & {
 		bottom: 0;
+	}
+
+	
+}
+
+.page-template-portfolio .gallery {
+	@media (max-width: $tablet) {
+		margin-left: -1rem;
+		margin-right: -1rem;
 	}
 }
