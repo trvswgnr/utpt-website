@@ -75,6 +75,16 @@ main {
     }
 }
 
+.container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+
+    @media (max-width: $tablet) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 .home main {
     padding-right: 0;
 
@@ -111,7 +121,9 @@ h2 {
 
 .logo {
     position: relative;
-    left: -15px;
+    @media (min-width: $tablet) {
+        left: -15px;
+    }
 }
 
 article {

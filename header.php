@@ -22,6 +22,7 @@
 				<div class="logo">
 					<img src="<?php image( 'logo.png' ); ?>" alt="Unicorns Take Photos Too Logo">
 				</div>
+				<div class="mobile-menu-toggle">MENU</div>
 				<?php
 				$args = array(
 					'theme_location' => 'primary',

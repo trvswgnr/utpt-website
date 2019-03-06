@@ -19,6 +19,11 @@
     &:hover {
         color: darken( #aaaaaa, 15% );
     }
+
+    @media (max-width: $tablet) {
+        height: 56px;
+        line-height: 44px;
+    }
 }
 
 .current-menu-item a {
@@ -26,5 +31,37 @@
 
     &:hover {
         color: darken( $color-2, 10% );
+    }
+}
+
+/**
+ * Mobile Menu
+ */
+
+.mobile-menu-toggle {
+    // height: 40px;
+    // width: 40px;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    font-weight: bold;
+    border: 2px solid $purple;
+    display: inline-block;
+    padding: 0.2em 1em;
+    color: darken( $purple, 25% );
+    cursor: pointer;
+}
+
+@media (max-width: $tablet) {
+    .menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.2s;
+
+        &.is-active {
+            max-height: 1000px;
+            transition: 0.6s;
+        }
     }
 }
