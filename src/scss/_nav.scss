@@ -39,21 +39,23 @@
  */
 
 .mobile-menu-toggle {
-    // height: 40px;
-    // width: 40px;
+    display: none;
     background-position: center;
     background-size: contain;
     margin: 0 auto;
     margin-top: 1.5em;
     font-weight: bold;
     border: 2px solid $purple;
-    display: inline-block;
     padding: 0.2em 1em;
     color: darken( $purple, 25% );
     cursor: pointer;
 }
 
 @media (max-width: $tablet) {
+    .mobile-menu-toggle {
+        display: inline-block;
+    }
+
     .menu {
         max-height: 0;
         overflow: hidden;

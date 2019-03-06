@@ -121,6 +121,7 @@ h2 {
 
 .logo {
     position: relative;
+    
     @media (min-width: $tablet) {
         left: -15px;
     }
