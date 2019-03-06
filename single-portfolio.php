@@ -30,7 +30,7 @@
 		?>
 		<div class="gallery gallery--home">
 			<?php foreach ( $gallery as $item ) : ?>
-				<a href="<?php echo esc_url( $item['sizes']['thumbnail'] ); ?>" class="gallery__item" style="background-image: url(<?php echo esc_url( $item['sizes']['large'] ); ?>);"></a>
+				<a href="<?php echo esc_url( $item['url'] ); ?>" class="gallery__item" style="background-image: url(<?php echo esc_url( $item['sizes']['large'] ); ?>);"></a>
 			<?php endforeach; ?>
 		</div>
 	<?php endif; ?>
