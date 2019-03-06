@@ -36,5 +36,4 @@
 	<?php endif; ?>
 </main>
 
-
 <?php get_footer(); ?>
