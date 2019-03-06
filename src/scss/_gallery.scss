@@ -55,6 +55,7 @@
 
 .gallery__view-more {
 	background: white;
+	opacity: 1;
 	
 	@media (max-width: $tablet) {
 		display: none;
